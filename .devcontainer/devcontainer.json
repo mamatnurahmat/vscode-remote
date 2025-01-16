@@ -1,19 +1,17 @@
 {
 	"name": "Python 3 with Docker-in-Docker",
+	"image": "newrahmat/byoi:dind-1.0.2",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"streetsidesoftware.code-spell-checker",
-				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
 	"runArgs": [
-		"--privileged",
-		"-v",
+		"--privileged", 
+		"-v", 
 		"/var/run/docker.sock:/var/run/docker.sock"
 	],
-	"remoteUser": "vscode"
+	"remoteUser": "root"
 }
-
