@@ -23,7 +23,7 @@ USER $USERNAME
 WORKDIR /workspace
 
 # Copy requirements and install dependencies
-COPY requirements.txt ./
+COPY ../requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Set default command
